@@ -1,0 +1,13 @@
+{
+  "name": "grapeful-games",
+  "version": "1.0.0",
+  "description": "Grapeful Games is a peer-to-peer-based web application that hosts party games.",
+  "main": "server.js",
+  "scripts": {},
+  "author": "Grapeful",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "express": "^4.17.1",
+    "peer": "^0.5.2"
+  }
+}
