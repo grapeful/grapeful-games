@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <title>Prototypes</title>
+        <link href="prototypes.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+
+        <main id="page-home">
+            <div>
+                <img src="logo-100x66.png" alt="Two round grapes next to each other, one purple, one pink." />
+                <button type="button" class="button">Join</button>
+                <button type="button" class="button">Host</button>
+            </div>
+        </main>
+
+
+        <main id="page-join">
+            <form>
+                <p class="error-message">Sorry, something went wrong.</p>
+                <input type="text" placeholder="Game Code" />
+                <input type="text" placeholder="Your Name" />
+                <button type="submit" class="button">Join</button>
+            </form>
+        </main>
+
+
+        <main id="page-host">
+            <form>
+                <p class="error-message">Please specify your name.</p>
+                <input type="text" placeholder="Your Name" />
+                <button type="submit" class="button">Host</button>
+            </form>
+        </main>
+
+
+        <main id="page-games">
+
+            <section id="section-game-code">
+                <h2>Game Code</h2>
+                <p>apple43</p>
+            </section>
+
+            <section id="section-players">
+                <h2>Players</h2>
+                <ul class="players">
+                    <li class="player">
+                        <div class="player-name">Victor</div>
+                    </li>
+                    <li class="player">
+                        <div class="player-name">Darren</div>
+                    </li>
+                    <li class="player">
+                        <div class="player-name">Rajdeep</div>
+                    </li>
+                    <li class="player">
+                        <div class="player-name">Nim</div>
+                    </li>
+                </ul>
+            </section>
+
+            <section id="section-games">
+                <button type="button">Trivia</button>
+                <button type="button">Democracy</button>
+                <button type="button">Occupational Therapy</button>
+                <button type="button">Donate</button>
+            </section>
+
+        </main>
+
+
+        <main id="page-trivia-question">
+
+            <section id="section-players">
+                <ul class="players">
+                    <li class="player">
+                        <div class="player-name">Victor</div>
+                        <div class="player-score">123</div>
+                    </li>
+                    <li class="player">
+                        <div class="player-name">Darren</div>
+                        <div class="player-score">456</div>
+                    </li>
+                    <li class="player">
+                        <div class="player-name">Rajdeep</div>
+                        <div class="player-score">78</div>
+                    </li>
+                    <li class="player">
+                        <div class="player-name">Nim</div>
+                        <div class="player-score">90</div>
+                    </li>
+                </ul>
+            </section>
+
+            <section id="section-timer">
+                <div><div style="width: 60%;"></div></div>
+            </section>
+
+            <section id="section-trivia-question">
+                <h2>Who invented the telephone?</h2>
+                <form>
+                    <label>
+                        <input type="radio" name="answer" value="0">
+                        <span>Alexander Graham Bell</span>
+                    </label>
+                    <label>
+                        <input type="radio" name="answer" value="1">
+                        <span>Elon Musk</span>
+                    </label>
+                    <label>
+                        <input type="radio" name="answer" value="2">
+                        <span>Nicola Tesla</span>
+                    </label>
+                </form>
+            </section>
+
+        </main>
+
+
+        <main id="page-trivia-answer">
+
+            <!-- There would be a <section id="section-players"> here. -->
+
+            <section id="section-trivia-answer">
+                <h2>Correct Answer</h2>
+                <p>Alexander Graham Bell</p>
+                <ul>
+                    <li>Darren <span>+1</span></li>
+                    <li>Nim <span>+1</span></li>
+                </ul>
+            </section>
+
+        </main>
+
+
+        <main id="page-trivia-final">
+            <h1>Final Score</h1>
+            <table>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Darren</td>
+                        <td>1230</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Nim</td>
+                        <td>456</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Rajdeep</td>
+                        <td>78</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>Victor</td>
+                        <td>90</td>
+                    </tr>
+                </tbody>
+            </table>
+        </main>
+
+    </body>
+</html>
