@@ -1,0 +1,193 @@
+/* ------------------------------------------ Globals ------------------------------------------- */
+
+* {
+    box-sizing: border-box;
+}
+
+body, input, button {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    color: black;
+}
+
+button {
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+button.button {
+    padding: 20px 30px;
+    border-radius: 5px;
+    color: white;
+    background-color: black;
+}
+
+input[type=text] {
+    outline: none;
+    border: none;
+}
+
+input[type=text] {
+    padding: 18px 10px;
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+p.error-message {
+    min-height: 1.2em;
+    color: #f05e67;
+    text-align: center;
+}
+
+/* ---------------------------------- Non-Game-Specific Pages ----------------------------------- */
+
+#page-home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+#page-home > div {
+    display: flex;
+    flex-direction: column;
+}
+#page-home > div > * {
+    margin-bottom: 20px;
+}
+
+#page-join, #page-host {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+#page-join > form, #page-host > form {
+    display: flex;
+    flex-direction: column;
+}
+#page-join > form > *, #page-host > form > * {
+    margin-bottom: 15px;
+}
+#page-join > form > input, #page-host > form > input {
+    text-align: center;
+}
+
+/* --------------------------------- Non-Game-Specific Sections --------------------------------- */
+
+#section-game-code {
+    padding: 20px 0;
+    text-align: center;
+}
+#section-game-code h2 {
+    margin-bottom: 0;
+    font-weight: normal;
+    font-size: 20px;
+}
+#section-game-code > p {
+    margin: 0;
+    font-size: 40px;
+}
+
+#section-players h2 {
+    font-size: 20px;
+    margin-bottom: 0;
+    font-weight: normal;
+    text-align: center;
+}
+#section-players ul {
+    margin-top: 0;
+    list-style: none;
+    padding-left: 0;
+    text-align: center;
+}
+#section-players ul li {
+    display: inline-block;
+    padding: 10px;
+}
+
+#section-games {
+    max-width: 1000px;
+    margin: auto;
+    text-align: center;
+}
+#section-games > button {
+    font-size: 20px;
+    width: 200px;
+    height: 100px;
+    margin: 15px;
+    padding: 20px 10px;
+    vertical-align: top;
+    border-radius: 5px;
+}
+
+#section-timer > div {
+    height: 30px;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+#section-timer > div > div {
+    height: 100%;
+    background-color: black;
+}
+
+/* ------------------------------------------- Trivia ------------------------------------------- */
+
+#page-trivia-question {
+    text-align: center;
+}
+#page-trivia-question h2 {
+    font-size: 35px;
+    padding: 40px 0 30px 0;
+    font-weight: normal;
+}
+#page-trivia-question label > input {
+    display: none;
+}
+#page-trivia-question input + span {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px;
+    color: rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+#page-trivia-question input:checked + span {
+    color: black;
+}
+
+#page-trivia-answer {
+    text-align: center;
+}
+
+#section-trivia-answer h2 {
+    font-size: 20px;
+    font-weight: normal;
+}
+#section-trivia-answer p {
+    margin: 0;
+    font-size: 30px;
+}
+#section-trivia-answer ul {
+    list-style: none;
+}
+#section-trivia-answer ul li {
+    margin: 15px 0;
+}
+
+#page-trivia-final {
+    text-align: center;
+}
+#page-trivia-final h1 {
+    font-weight: normal;
+}
+#page-trivia-final table {
+    margin: 0 auto;
+}
+#page-trivia-final td {
+    padding: 10px;
+}
